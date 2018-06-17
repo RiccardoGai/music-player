@@ -1,0 +1,34 @@
+<div class="p-m">
+  <div class="row p-x-s p-y-xs border-b-grey  text-s">
+    <div class="col-xs-4 opacity-05 uppercase">
+      Title
+    </div>
+    <div class="col-xs-4 opacity-05 uppercase">
+      Artist
+    </div>
+    <div class="col-xs-4 opacity-05 uppercase">
+      Album
+    </div>
+  </div>
+
+  <div class="row p-s border-b-grey cursor-pointer hover text-s"
+       *ngFor="let song of playlist" (click)="selectSong(song)"
+       [ngClass]="{'blue' : currentSong === song}"
+  >
+    <div class="col-xs-4">
+      {{song.title}}
+    </div>
+    <div class="col-xs-4">
+      {{song.artist}}
+    </div>
+    <div class="col-xs-4">
+      {{song.album}}
+    </div>
+  </div>
+  <div class="row border-b-grey" *ngIf="playlist.length == 0">
+    <div class="col-xs-12 text-center text-s">
+      Your playlist is empty!
+    </div>
+  </div>
+</div>
+

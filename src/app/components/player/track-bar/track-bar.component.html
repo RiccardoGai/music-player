@@ -1,0 +1,48 @@
+<div class="trackbar">
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="align-items-center" *ngIf="currentSong">
+        <i class="material-icons">music_note</i>
+        <div class="flex-direction-column m-l-s">
+          <div class="text-l">{{currentSong.title}}</div>
+          <div class="text-s">{{currentSong.artist}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 flex-direction-column">
+      <div class="justify-content-center m-b-s">
+        <i class="material-icons trackbar__icon-btn" [ngClass]="{'opacity-05 cursor-default': !existPrev()}" (click)="goPrev()">skip_previous</i>
+        <i class="material-icons trackbar__icon-btn" (click)="play()" *ngIf="player.paused">play_circle_filled</i>
+        <i class="material-icons trackbar__icon-btn" (click)="pause()" *ngIf="!player.paused">pause_circle_filled</i>
+        <i class="material-icons trackbar__icon-btn" [ngClass]="{'opacity-05 cursor-default': !existNext()}" (click)="goNext()">skip_next</i>
+      </div>
+      <div class="justify-content-center align-items-center">
+        <input
+          [disabled]="!currentSong"
+          type="range"
+          min="0"
+          [max]="player.duration"
+          [value]="player.currentTime"
+          class="trackbar__range m-x-s"
+          step="0.05"
+          #progr
+          (change)="updateProgress(progr.value)"
+        >
+      </div>
+    </div>
+    <div class="col-xs-4 align-items-center justify-content-center">
+        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--small" (click)="updateVolume(0.5)" *ngIf="player.volume === 0">volume_off</i>
+        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--small" (click)="updateVolume(0)" *ngIf="player.volume > 0">volume_up</i>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.05"
+          [value]="volume"
+          class="trackbar__range trackbar__range--volume"
+          #vol
+          (input)="updateVolume(vol.value)"
+        >
+    </div>
+  </div>
+</div>

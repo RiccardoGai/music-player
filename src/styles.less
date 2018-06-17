@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/normalize.less";
+
+html{
+  font-size:62.5%;
+  color: @white;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size:@fs-m;
+  background: @black;
+}
+*{
+  outline: none;
+}
+
+@import "styles/colour.less";
+@import "styles/spacing.less";
+@import "styles/grid-responsive.less";
+@import "styles/typography.less";
+@import "styles/trackbar.less";
+@import "styles/utilities.less";
+@import "styles/snackbar.less";

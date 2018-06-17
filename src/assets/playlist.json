@@ -1,11 +1,62 @@
-{
-  "name": "Rock PlayList",
-  "songs": [
-    {
-      "title": "track-01.mp3",
-      "artist": "",
-      "album" : "",
-      "src" : "songs/track-01.mp3"
-    }
-  ]
-}
+[
+  {
+    "title": "track-01",
+    "artist": "artist-1",
+    "album" : "album-1",
+    "src" : "assets/songs/track-01.mp3"
+  },
+  {
+    "title": "track-02",
+    "artist": "artist-1",
+    "album" : "album-1",
+    "src" : "assets/songs/track-02.mp3"
+  },
+  {
+    "title": "track-03",
+    "artist": "artist-1",
+    "album" : "album-1",
+    "src" : "assets/songs/track-03.mp3"
+  },
+  {
+    "title": "track-04",
+    "artist": "artist-1",
+    "album" : "album-1",
+    "src" : "assets/songs/track-04.mp3"
+  },
+  {
+    "title": "track-05",
+    "artist": "artist-2",
+    "album" : "album-abc",
+    "src" : "assets/songs/track-05.mp3"
+  },
+  {
+    "title": "track-06",
+    "artist": "artist-3",
+    "album" : "album-qwerty",
+    "src" : "assets/songs/track-06.mp3"
+  },
+  {
+    "title": "track-07",
+    "artist": "artist-4",
+    "album" : "album-1",
+    "src" : "assets/songs/track-07.mp3"
+  },
+  {
+    "title": "track-08",
+    "artist": "artist-4",
+    "album" : "album-1",
+    "src" : "assets/songs/track-08.mp3"
+  },
+  {
+    "title": "track-09",
+    "artist": "artist-4",
+    "album" : "album-1",
+    "src" : "assets/songs/track-09.mp3"
+  },
+  {
+    "title": "track-09",
+    "artist": "artist-4",
+    "album" : "album-1",
+    "src" : "assets/songs/track-09.mp3"
+  }
+]
