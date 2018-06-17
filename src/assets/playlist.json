@@ -1,0 +1,11 @@
+{
+  "name": "Rock PlayList",
+  "songs": [
+    {
+      "title": "track-01.mp3",
+      "artist": "",
+      "album" : "",
+      "src" : "songs/track-01.mp3"
+    }
+  ]
+}

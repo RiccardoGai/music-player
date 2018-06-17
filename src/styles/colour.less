@@ -1,0 +1,124 @@
+/* Colours
+––––––––––––––––––––––––––––– */
+
+@blue-medium: #00709c;
+@blue: @blue-medium;					//Primary buttons, active elements, highlights...
+/*
+NOTE: The above needs cleaning up. Ideally we would have:
+@blue: #00b8d0;
+@blue-medium: #00709c;
+@primary-color: @blue-medium;
+This allows primary color be set to anything, depending on the project, without changing other color variables.
+ */
+@red:			#ea3259; 				//Errors, form validation, status...
+@orange:		#f7b600; 				//Warning, status...
+@green:			#7ac43f; 				//Success, confirmation, status...
+@white:			#ffffff; 				//Backgrounds...
+@black:			#002d3e; 				//Primary Text, dark backgrounds...
+@purple:		#5c55ae; 				//BankCheck related elements...
+
+@grey-xdark:	rgba(0, 45, 62, 0.9);	//Dark backgrounds...
+@grey-dark:		rgba(0, 45, 62, 0.5);	//Secondary text...
+@grey-medium:	rgba(0, 45, 62, 0.2);	//Text fields, select boxes...
+@grey-light:	rgba(0, 45, 62, 0.1);	//Dividers...
+@grey-medium-light:	rgba(0, 45, 62, 0.4);	//Icon...
+@grey-xlight:	rgba(0, 45, 62, 0.04);	//Backgrounds...
+
+@grey-xdark-hex:	#1a4352;
+@grey-dark-hex:		#80969f;
+@grey-medium-hex:	#ccd5d8;
+@grey-light-hex:	#e6eaec;
+@grey-xlight-hex:	#f5f7f7;
+
+@orange-medium:	rgba(247,182,0, 0.9);
+@green-medium:	rgba(122,196,63, 0.9);
+@red-medium:	rgba(234,50,89, 0.9);
+
+@blue-hover: darken(@blue, 10%);
+
+@blue-medium-xlight: #f5f7f7;
+@blue-dark:     #012F3E;       				//logo's background
+@blue-light:  rgba(0, 184, 208, 0.3);
+@blue-xlight:  rgba(0, 184, 208, 0.2);
+@yellow-light: rgba(247, 182, 0, 0.2); //text highlight
+
+//text colour modifiers
+
+.blue{color: @blue}
+.blue-medium{color: @blue-medium}
+.blue-dark{color: @blue-dark}
+.red{color: @red}
+.orange{color: @orange}
+.green{color: @green}
+.white{color: @white}
+.black{color: @black;}
+.purple{color: @purple;}
+
+
+.red-medium{color: @red-medium}
+.orange-medium{color: @orange-medium}
+.green-medium{color: @green-medium}
+
+.grey-xdark{color: @grey-xdark}
+.grey-dark{color: @grey-dark}
+.grey-medium{color: @grey-medium}
+.grey-light{color: @grey-light}
+.grey-xlight{color: @grey-xlight}
+.grey-medium-light{color: @grey-medium-light}
+
+
+.grey-xdark-hex{color: @grey-xdark-hex}
+.grey-dark-hex{color: @grey-dark-hex}
+.grey-medium-hex{color: @grey-medium-hex}
+.grey-light-hex{color: @grey-light-hex}
+.grey-xlight-hex{color: @grey-xlight-hex}
+
+//background colour modifiers
+
+.bg-blue{background-color: @blue}
+.bg-blue-light {
+  background-color: @blue-light
+}
+.bg-blue-xlight {
+  background-color: @blue-xlight
+}
+.bg-blue-medium {
+  background-color: @blue-medium
+}
+.bg-blue-medium-xlight {
+  background-color: @blue-medium-xlight
+}
+.bg-red{background-color: @red}
+.bg-orange{background-color: @orange}
+.bg-green{background-color: @green}
+.bg-white{background-color: @white}
+.bg-black{background-color: @black;}
+.bg-purple{background-color: @purple;}
+
+.bg-grey-xdark{background-color: @grey-xdark}
+.bg-grey-dark{background-color: @grey-dark}
+.bg-grey-medium{background-color: @grey-medium}
+.bg-grey-light{background-color: @grey-light}
+.bg-grey-xlight{background-color: @grey-xlight}
+
+.bg-grey-xdark-hex{background-color: @grey-xdark-hex}
+.bg-grey-dark-hex{background-color: @grey-dark-hex}
+.bg-grey-medium-hex{background-color: @grey-medium-hex}
+.bg-grey-light-hex{background-color: @grey-light-hex}
+.bg-grey-xlight-hex{background-color: @grey-xlight-hex}
+.bg-none{background-color: inherit !important;}
+//text highlights
+.highlight-yellow{
+	background-color: @yellow-light;
+}
+
+
+@color-vdoc:#7e3890;
+
+@color-bank:#00709c;
+@color-person:#ca6d00;
+@color-public-authority:#888888;
+@color-industrial-company:#00be0a;
+@color-financial-company:#549c9b;
+@color-other:#585857;
+@color-foundation:#854167;
