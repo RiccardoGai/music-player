@@ -1,13 +1,28 @@
-<div class="p-m">
-  <div class="row p-x-s p-y-xs border-b-grey  text-s">
-    <div class="col-xs-4 opacity-05 uppercase">
+
+
+
+<div class="p-x-xl p-t-xl">
+  <div class="row align-items-center">
+    <div class="col-xs-1 m-r-s">
+      <i class="material-icons blue icon-xxxl">queue_music</i>
+    </div>
+    <div class="col-xs">
+      <div class="text-m opacity-05">Playlist</div>
+      <div class="text-xl text-bold">My Playlist</div>
+    </div>
+  </div>
+  <div class="row p-x-s p-y-xs m-t-s border-b-blue text-bold text-s">
+    <div class="col-xs-3 opacity-05 uppercase">
       Title
     </div>
-    <div class="col-xs-4 opacity-05 uppercase">
+    <div class="col-xs-3 opacity-05 uppercase">
       Artist
     </div>
-    <div class="col-xs-4 opacity-05 uppercase">
+    <div class="col-xs-3 opacity-05 uppercase">
       Album
+    </div>
+    <div class="col-xs-3 opacity-05 uppercase">
+      Year
     </div>
   </div>
 
@@ -15,14 +30,17 @@
        *ngFor="let song of playlist" (click)="selectSong(song)"
        [ngClass]="{'blue' : currentSong === song}"
   >
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       {{song.title}}
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       {{song.artist}}
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       {{song.album}}
+    </div>
+    <div class="col-xs-3">
+      {{song.year}}
     </div>
   </div>
   <div class="row border-b-grey" *ngIf="playlist.length == 0">

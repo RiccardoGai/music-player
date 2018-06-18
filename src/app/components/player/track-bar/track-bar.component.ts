@@ -81,7 +81,9 @@ export class TrackBarComponent implements OnInit {
       this.currentSongService.setSong(this.playlist[Math.floor(Math.random() * this.playlist.length)])
       return
     }
-    const index =  !!this.playlist[this.playlist.indexOf(this.currentSong) + 1] ? this.playlist.indexOf(this.currentSong) + 1 : 0
+    const index = !!this.playlist[this.playlist.indexOf(this.currentSong) + 1]
+      ? this.playlist.indexOf(this.currentSong) + 1
+      : 0
     this.currentSongService.setSong(this.playlist[index])
   }
   public goPrev(): void {
@@ -90,7 +92,9 @@ export class TrackBarComponent implements OnInit {
       this.play()
       return
     }
-    const index =  !!this.playlist[this.playlist.indexOf(this.currentSong) - 1] ? this.playlist.indexOf(this.currentSong) - 1 : 0
+    const index = !!this.playlist[this.playlist.indexOf(this.currentSong) - 1]
+      ? this.playlist.indexOf(this.currentSong) - 1
+      : 0
     this.currentSongService.setSong(this.playlist[index])
   }
   public secondsToMinute(seconds: number): string {

@@ -3,60 +3,70 @@
     "title": "Wish you were here",
     "artist": "Pink Floyd",
     "album" : "album-1",
+    "year" : 1970,
     "src" : "assets/songs/track-01.mp3"
   },
   {
     "title": "You shook me all night long",
     "artist": "AC/DC",
     "album" : "album-1",
+    "year" : 1980,
     "src" : "assets/songs/track-02.mp3"
   },
   {
     "title": "Nightrain",
     "artist": "Guns N' Roses",
     "album" : "album-1",
+    "year" : 1990,
     "src" : "assets/songs/track-03.mp3"
   },
   {
     "title": "Don't stop me now",
     "artist": "Queen",
     "album" : "album-1",
+    "year" : 1985,
     "src" : "assets/songs/track-04.mp3"
   },
   {
     "title": "Knockin' on Heaven's Door",
     "artist": "Guns N' Roses",
     "album" : "album-abc",
+    "year" : 1992,
     "src" : "assets/songs/track-05.mp3"
   },
   {
     "title": "Stairway to Heaven",
     "artist": "Led Zeppelin",
     "album" : "album-qwerty",
+    "year" : 1970,
     "src" : "assets/songs/track-06.mp3"
   },
   {
     "title": "Basket Case",
     "artist": "Green Day",
     "album" : "album-1",
+    "year" : 2000,
     "src" : "assets/songs/track-07.mp3"
   },
   {
     "title": "Should i stay or should i go",
     "artist": "The Clash",
     "album" : "album-1",
+    "year" : 1980,
     "src" : "assets/songs/track-08.mp3"
   },
   {
     "title": "Smeels like teen spirits",
     "artist": "Nirvana",
     "album" : "album-1",
+    "year" : 1991,
     "src" : "assets/songs/track-09.mp3"
   },
   {
     "title": "Californication",
     "artist": "Red Hot Chili Peppers",
     "album" : "album-1",
+    "year" : 2006,
     "src" : "assets/songs/track-10.mp3"
   }
 ]
