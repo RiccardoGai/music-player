@@ -38,7 +38,7 @@
           min="0"
           max="1"
           step="0.05"
-          [value]="volume"
+          [value]="player.volume"
           class="trackbar__range trackbar__range--volume"
           #vol
           (input)="updateVolume(vol.value)"
