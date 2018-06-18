@@ -1,62 +1,62 @@
 [
   {
-    "title": "track-01",
-    "artist": "artist-1",
+    "title": "Wish you were here",
+    "artist": "Pink Floyd",
     "album" : "album-1",
     "src" : "assets/songs/track-01.mp3"
   },
   {
-    "title": "track-02",
-    "artist": "artist-1",
+    "title": "You shook me all night long",
+    "artist": "AC/DC",
     "album" : "album-1",
     "src" : "assets/songs/track-02.mp3"
   },
   {
-    "title": "track-03",
-    "artist": "artist-1",
+    "title": "Nightrain",
+    "artist": "Guns N' Roses",
     "album" : "album-1",
     "src" : "assets/songs/track-03.mp3"
   },
   {
-    "title": "track-04",
-    "artist": "artist-1",
+    "title": "Don't stop me now",
+    "artist": "Queen",
     "album" : "album-1",
     "src" : "assets/songs/track-04.mp3"
   },
   {
-    "title": "track-05",
-    "artist": "artist-2",
+    "title": "Knockin' on Heaven's Door",
+    "artist": "Guns N' Roses",
     "album" : "album-abc",
     "src" : "assets/songs/track-05.mp3"
   },
   {
-    "title": "track-06",
-    "artist": "artist-3",
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
     "album" : "album-qwerty",
     "src" : "assets/songs/track-06.mp3"
   },
   {
-    "title": "track-07",
-    "artist": "artist-4",
+    "title": "Basket Case",
+    "artist": "Green Day",
     "album" : "album-1",
     "src" : "assets/songs/track-07.mp3"
   },
   {
-    "title": "track-08",
-    "artist": "artist-4",
+    "title": "Should i stay or should i go",
+    "artist": "The Clash",
     "album" : "album-1",
     "src" : "assets/songs/track-08.mp3"
   },
   {
-    "title": "track-09",
-    "artist": "artist-4",
+    "title": "Smeels like teen spirits",
+    "artist": "Nirvana",
     "album" : "album-1",
     "src" : "assets/songs/track-09.mp3"
   },
   {
-    "title": "track-09",
-    "artist": "artist-4",
+    "title": "Californication",
+    "artist": "Red Hot Chili Peppers",
     "album" : "album-1",
-    "src" : "assets/songs/track-09.mp3"
+    "src" : "assets/songs/track-10.mp3"
   }
 ]
