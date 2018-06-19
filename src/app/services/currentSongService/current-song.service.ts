@@ -6,7 +6,6 @@ import { ISong } from '../../models/ISong'
 })
 export class CurrentSongService {
   private currentSong: Subject<ISong> = new Subject<ISong>()
-  private isPause: Subject<void> = new Subject<void>()
   constructor() {}
   setSong(song: ISong): void {
     this.currentSong.next(song)

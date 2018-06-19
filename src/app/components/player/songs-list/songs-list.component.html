@@ -15,8 +15,8 @@
     <div class="col-xs opacity-05 uppercase">Album</div>
     <div class="col-xs opacity-05 uppercase">Year</div>
   </div>
-
-  <div class="row p-xs border-b-grey cursor-pointer hover text-s align-items-center"
+  <!--song class is used for test-->
+  <div class="row p-xs border-b-grey cursor-pointer hover text-s align-items-center song"
        *ngFor="let song of playlist" (click)="selectSong(song)"
        [ngClass]="{'blue' : currentSong === song}"
   >

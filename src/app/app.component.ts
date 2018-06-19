@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { ISong } from './models/ISong'
 import { PlaylistService } from './services/playlist/playlist.service'
 
@@ -6,7 +6,7 @@ import { PlaylistService } from './services/playlist/playlist.service'
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private playlistService: PlaylistService) {}
   public playlist: ISong[] = []
   ngOnInit(): void {
