@@ -12,6 +12,7 @@ export class TrackBarComponent implements OnInit {
   @Input() playlist: ISong[]
   public currentSong: ISong
   public progress = 0
+  private isSettingProgress = false
   public player = new Audio() // it returns a HTMLAudioElement
   public reproductionTypes: typeof ReproductionTypes = ReproductionTypes
   public reproduction: number = ReproductionTypes.CLASSIC
@@ -58,7 +59,9 @@ export class TrackBarComponent implements OnInit {
       this.goNext()
     })
     this.player.addEventListener('timeupdate', () => {
-      this.progress = this.player.currentTime
+      if (!this.isSettingProgress) {
+        this.progress = this.player.currentTime
+      }
     })
   }
   public play(): void {
@@ -72,7 +75,12 @@ export class TrackBarComponent implements OnInit {
   public pause(): void {
     this.player.pause()
   }
+  public dragProgress(value: string) {
+    this.isSettingProgress = true
+    this.progress = parseFloat(value)
+  }
   public updateProgress(value: string): void {
+    this.isSettingProgress = false
     this.player.currentTime = parseFloat(value)
   }
   public updateVolume(value: string): void {

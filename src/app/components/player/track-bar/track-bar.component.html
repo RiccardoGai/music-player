@@ -26,6 +26,7 @@
           step="0.05"
           #progr
           (change)="updateProgress(progr.value)"
+          (input)="dragProgress(progr.value)"
         >
        <span class="text-s" *ngIf="player.duration">{{secondsToMinute(player.duration)}}</span>
       </div>
