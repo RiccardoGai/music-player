@@ -1,12 +1,16 @@
+@trackbar-height: 8rem;
 .trackbar {
   background: @black-medium;
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 8rem;
+  height: @trackbar-height;
   box-sizing: border-box;
   .p-x-l;
   .p-y-m;
+}
+.has-trackbar {
+  margin-bottom: @trackbar-height;
 }
 .trackbar__icon-btn {
   .cursor-pointer;
