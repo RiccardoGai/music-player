@@ -18,9 +18,11 @@ export class TrackBarComponent implements OnInit {
 
   ngOnInit() {
     this.currentSongService.getSong().subscribe((song: ISong) => {
-      this.currentSong = song
-      this.player.src = this.currentSong.src
-      this.play()
+      if (song) {
+        this.currentSong = song
+        this.player.src = this.currentSong.src
+        this.play()
+      }
     })
     this.player.volume = 0.5
     this.player.addEventListener('error', (e: any) => {

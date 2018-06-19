@@ -12,7 +12,7 @@ export class PlayerViewComponent implements OnInit {
   ngOnInit() {
     this.playlistService.getPlaylist().subscribe(
       (playlist: ISong[]) => {
-        this.playlist = playlist
+        this.playlist = playlist ? playlist : []
       },
       err => {},
     )
