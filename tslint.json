@@ -69,6 +69,7 @@
     ],
     "unified-signatures": true,
     "variable-name": false,
+    "no-submodule-imports": false,
     "whitespace": [
       true,
       "check-branch",

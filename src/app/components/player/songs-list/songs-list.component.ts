@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { ISong } from '../../../models/ISong'
 import { CurrentSongService } from '../../../services/currentSongService/current-song.service'
 

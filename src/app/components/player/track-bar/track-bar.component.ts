@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core'
 import { ISong } from '../../../models/ISong'
 import { ReproductionTypes } from '../../../models/reproductionTypes'
 import { CurrentSongService } from '../../../services/currentSongService/current-song.service'
@@ -12,7 +12,7 @@ export class TrackBarComponent implements OnInit {
   @Input() playlist: ISong[]
   public currentSong: ISong
   public progress = 0
-  public player = new Audio() //it returns a HTMLAudioElement
+  public player = new Audio() // it returns a HTMLAudioElement
   public reproductionTypes: typeof ReproductionTypes = ReproductionTypes
   public reproduction: number = ReproductionTypes.CLASSIC
 
