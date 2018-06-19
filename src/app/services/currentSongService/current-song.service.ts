@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { Observable, Subject } from 'rxjs/'
 import { ISong } from '../../models/ISong'
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class CurrentSongService {
   private currentSong: Subject<ISong> = new Subject<ISong>()

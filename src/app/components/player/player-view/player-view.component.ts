@@ -4,17 +4,17 @@ import { ISong } from '../../../models/ISong'
 
 @Component({
   selector: 'app-player-view',
-  templateUrl: './player-view.component.html',
+  templateUrl: './player-view.component.html'
 })
 export class PlayerViewComponent implements OnInit {
-  constructor(private playlistService: PlaylistService, ) {}
+  constructor(private playlistService: PlaylistService) {}
   public playlist: ISong[] = []
   ngOnInit(): void {
     this.playlistService.getPlaylist().subscribe(
       (playlist: ISong[]) => {
         this.playlist = playlist ? playlist : []
       },
-      err => {},
+      err => {}
     )
   }
 }

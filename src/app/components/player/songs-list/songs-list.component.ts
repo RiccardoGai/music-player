@@ -4,7 +4,7 @@ import { CurrentSongService } from '../../../services/currentSongService/current
 
 @Component({
   selector: 'app-songs-list',
-  templateUrl: './songs-list.component.html',
+  templateUrl: './songs-list.component.html'
 })
 export class SongsListComponent implements OnInit {
   @Input() playlist: ISong[]

@@ -5,7 +5,7 @@ import { CurrentSongService } from '../../../services/currentSongService/current
 import { createSnackBar } from '../../../utilities/snackBar'
 @Component({
   selector: 'app-track-bar',
-  templateUrl: './track-bar.component.html',
+  templateUrl: './track-bar.component.html'
 })
 export class TrackBarComponent implements OnInit {
   constructor(private currentSongService: CurrentSongService) {}
@@ -36,13 +36,13 @@ export class TrackBarComponent implements OnInit {
         case e.target.error.MEDIA_ERR_DECODE:
           createSnackBar(
             'The audio playback was aborted due to a corruption problem or because the video used features your browser did not support.',
-            true,
+            true
           )
           break
         case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
           createSnackBar(
             'The video audio not be loaded, either because the server or network failed or because the format is not supported.',
-            true,
+            true
           )
           break
         default:

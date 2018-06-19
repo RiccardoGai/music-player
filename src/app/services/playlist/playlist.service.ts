@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs/index'
 import { ISong } from '../../models/ISong'
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class PlaylistService {
   constructor(private http: HttpClient) {}
