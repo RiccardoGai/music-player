@@ -1,10 +1,9 @@
-
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { TrackBarComponent } from './track-bar.component'
-import {deepEqual} from "assert";
-import {ReproductionTypes} from "../../../models/reproductionTypes";
-import {By} from "@angular/platform-browser";
+import { deepEqual } from 'assert'
+import { ReproductionTypes } from '../../../models/reproductionTypes'
+import { By } from '@angular/platform-browser'
 
 describe('TrackBarComponent', () => {
   let component: TrackBarComponent
@@ -26,15 +25,15 @@ describe('TrackBarComponent', () => {
         artist: 'Pink Floyd',
         album: 'album-1',
         year: 1970,
-        src: 'assets/songs/track-01.mp3',
+        src: 'assets/songs/track-01.mp3'
       },
       {
         title: 'Track 2',
         artist: 'Pink Floyd',
         album: 'album-1',
         year: 1970,
-        src: 'assets/songs/track-01.mp3',
-      },
+        src: 'assets/songs/track-01.mp3'
+      }
     ]
     component.currentSong = component.playlist[0]
     fixture.detectChanges()
@@ -70,26 +69,26 @@ describe('TrackBarComponent', () => {
     component.goPrev()
     deepEqual(component.currentSong, component.playlist[1])
   })
-  it('should click and stop the song ',() => {
-    spyOn(component, 'pause');
+  it('should click and stop the song ', () => {
+    spyOn(component, 'pause')
     fixture.whenStable().then(() => {
       deepEqual(component.player.paused, true)
     })
   })
-  it('should click and play the song ',() => {
-    spyOn(component, 'pause');
+  it('should click and play the song ', () => {
+    spyOn(component, 'pause')
     fixture.whenStable().then(() => {
       deepEqual(component.player.paused, false)
     })
-  }
-  it('should drag and update the song progress',() => {
+  })
+  it('should drag and update the song progress', () => {
     const progress = '20'
     spyOn(component, 'updateProgress').and.returnValue(progress)
     fixture.whenStable().then(() => {
       deepEqual(component.player.currentTime, progress)
     })
   })
-  it('should drag and update the volume',() => {
+  it('should drag and update the volume', () => {
     const volume = '0.7'
     spyOn(component, 'updateVolume').and.returnValue(volume)
     fixture.whenStable().then(() => {
@@ -97,4 +96,3 @@ describe('TrackBarComponent', () => {
     })
   })
 })
-

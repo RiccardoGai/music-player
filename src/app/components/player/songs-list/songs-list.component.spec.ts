@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { By } from '@angular/platform-browser';
+import { By } from '@angular/platform-browser'
 import { SongsListComponent } from './songs-list.component'
-import {deepEqual} from "assert";
+import { deepEqual } from 'assert'
 
 describe('SongsListComponent', () => {
   let component: SongsListComponent
@@ -9,7 +9,7 @@ describe('SongsListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SongsListComponent],
+      declarations: [SongsListComponent]
     }).compileComponents()
   }))
 
@@ -22,15 +22,15 @@ describe('SongsListComponent', () => {
         artist: 'Pink Floyd',
         album: 'album-1',
         year: 1970,
-        src: 'assets/songs/track-01.mp3',
+        src: 'assets/songs/track-01.mp3'
       },
       {
         title: 'Track 2',
         artist: 'Pink Floyd',
         album: 'album-1',
         year: 1970,
-        src: 'assets/songs/track-01.mp3',
-      },
+        src: 'assets/songs/track-01.mp3'
+      }
     ]
     fixture.detectChanges()
   })
@@ -39,9 +39,9 @@ describe('SongsListComponent', () => {
     expect(component).toBeTruthy()
   })
   it('should display the playlist ', async () => {
-    fixture.detectChanges();
+    fixture.detectChanges()
     fixture.whenStable().then(() => {
-      const songsList = fixture.debugElement.queryAllNodes(By.css('.song'));
+      const songsList = fixture.debugElement.queryAllNodes(By.css('.song'))
       songsList.forEach((s, index) => {
         const el: HTMLElement = s.nativeNode
         expect(el.textContent).toContain(component.playlist[index].title)
@@ -51,8 +51,8 @@ describe('SongsListComponent', () => {
       })
     })
   })
-  it('should change the song ',() => {
-    spyOn(component, 'selectSong');
+  it('should change the song ', () => {
+    spyOn(component, 'selectSong')
     fixture.whenStable().then(() => {
       fixture.debugElement.queryAllNodes(By.css('.song')[1].nativeElement.click())
       deepEqual(component.currentSong, component.playlist[1])

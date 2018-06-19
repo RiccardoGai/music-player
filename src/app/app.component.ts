@@ -4,7 +4,7 @@ import { PlaylistService } from './services/playlist/playlist.service'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
   constructor(private playlistService: PlaylistService) {}
@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
       (playlist: ISong[]) => {
         this.playlist = Array.isArray(playlist) ? playlist : []
       },
-      err => {},
+      err => {}
     )
   }
 }
