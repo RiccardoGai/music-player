@@ -15,10 +15,8 @@ Run `yarn start` (or `npm start`). Navigate to `http://localhost:8080/`
 
 Run `ng test` to execute the unit tests
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests
 
 ## Further help
 
-The playlist is stored on 
+The playlist is stored on src/assets/playlist.json
+The songs are store on src/assets/songs

@@ -54,7 +54,7 @@ describe('SongsListComponent', () => {
   it('should change the song ',() => {
     spyOn(component, 'selectSong');
     fixture.whenStable().then(() => {
-      fixture.debugElement.queryAllNodes(By.css('.song')[1].nativeElement.click()
+      fixture.debugElement.queryAllNodes(By.css('.song')[1].nativeElement.click())
       deepEqual(component.currentSong, component.playlist[1])
     })
   })
