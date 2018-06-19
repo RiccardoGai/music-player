@@ -15,8 +15,8 @@ export class SongsListComponent implements OnInit {
     })
   }
 
-  ngOnInit() {}
-  public selectSong(song: ISong) {
+  ngOnInit(): void {}
+  public selectSong(song: ISong): void {
     this.currentSongService.setSong(song)
   }
 }

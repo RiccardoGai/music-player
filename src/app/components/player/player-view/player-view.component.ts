@@ -9,7 +9,7 @@ import { ISong } from '../../../models/ISong'
 export class PlayerViewComponent implements OnInit {
   constructor(private playlistService: PlaylistService, ) {}
   public playlist: ISong[] = []
-  ngOnInit() {
+  ngOnInit(): void {
     this.playlistService.getPlaylist().subscribe(
       (playlist: ISong[]) => {
         this.playlist = playlist ? playlist : []

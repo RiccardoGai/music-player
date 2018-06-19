@@ -11,6 +11,11 @@
       true,
       "rxjs/Rx"
     ],
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration"
+    ],
     "interface-over-type-literal": true,
     "label-position": true,
     "member-access": false,
@@ -83,4 +88,5 @@
     "component-class-suffix": true,
     "directive-class-suffix": true
   }
+
 }

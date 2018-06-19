@@ -11,12 +11,12 @@ export class TrackBarComponent implements OnInit {
   constructor(private currentSongService: CurrentSongService) {}
   @Input() playlist: ISong[]
   public currentSong: ISong
-  public progress: number = 0
+  public progress = 0
   public player = new Audio() //it returns a HTMLAudioElement
   public reproductionTypes: typeof ReproductionTypes = ReproductionTypes
   public reproduction: number = ReproductionTypes.CLASSIC
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.currentSongService.getSong().subscribe((song: ISong) => {
       if (song) {
         this.currentSong = song
@@ -100,7 +100,7 @@ export class TrackBarComponent implements OnInit {
     this.currentSongService.setSong(this.playlist[index])
   }
   public secondsToMinute(seconds: number): string {
-    seconds = seconds | 0
+    seconds = Math.floor(seconds)
     return (
       Math.floor(seconds / 60) + '.' + (seconds % 60 ? (seconds % 60 < 10 ? '0' + (seconds % 60) : seconds % 60) : '00')
     )

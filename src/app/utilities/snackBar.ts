@@ -1,6 +1,8 @@
-export function createSnackBar(message: string, isError?: boolean) {
+export function createSnackBar(message: string, isError?: boolean): void {
   const oldSnackBars = document.getElementById('snackbar')
-  oldSnackBars && oldSnackBars.parentNode.removeChild(oldSnackBars)
+  if (oldSnackBars) {
+    oldSnackBars.parentNode.removeChild(oldSnackBars)
+  }
   const snackbar = document.createElement('div')
   snackbar.setAttribute('id', 'snackbar')
   if (isError) {
@@ -11,6 +13,8 @@ export function createSnackBar(message: string, isError?: boolean) {
 
   document.body.appendChild(snackbar)
   setTimeout(() => {
-    snackbar && snackbar.parentNode && snackbar.parentNode.removeChild(snackbar)
+    if (snackbar && snackbar.parentNode) {
+      snackbar.parentNode.removeChild(snackbar)
+    }
   }, 8000)
 }
