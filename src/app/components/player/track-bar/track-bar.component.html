@@ -7,12 +7,12 @@
     </div>
     <div class="col-xs-4 flex-direction-column">
       <div class="justify-content-center align-items-center m-b-s">
-        <i class="material-icons trackbar__icon-btn hover-color-blue m-r-m trackbar__icon-btn--xsmall trackbar__icon-btn--hide" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.REPEAT}" (click)="setRepeat()">repeat</i>
+        <i class="material-icons trackbar__icon-btn hover-color-blue m-r-m trackbar__icon-btn--xsmall hidden-xs" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.REPEAT}" (click)="setRepeat()">repeat</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue" (click)="goPrev()">skip_previous</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue m-l-s" (click)="play()" *ngIf="player.paused">play_circle_outline</i>
         <i class="material-icons trackbar__icon-btn blue m-l-s" (click)="pause()" *ngIf="!player.paused">pause_circle_outline</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue m-l-s"  (click)="goNext()">skip_next</i>
-        <i class="material-icons trackbar__icon-btn hover-color-blue m-l-m trackbar__icon-btn--xsmall trackbar__icon-btn--hide" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.RANDOM}" (click)="setRandom()">shuffle</i>
+        <i class="material-icons trackbar__icon-btn hover-color-blue m-l-m trackbar__icon-btn--xsmall hidden-xs" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.RANDOM}" (click)="setRandom()">shuffle</i>
       </div>
       <div class="justify-content-center align-items-center min-height-2">
         <span class="text-s" *ngIf="player.duration">{{secondsToMinute(progress)}}</span>
