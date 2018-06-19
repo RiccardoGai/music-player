@@ -1,18 +1,18 @@
 <div class="trackbar row">
-    <div class="col-xs-4 p-r-s">
+    <div class="col-xs-3 p-r-s">
       <ng-container *ngIf="currentSong">
         <div class="text-l ellipsis">{{currentSong.title}}</div>
         <div class="text-s opacity-05 ellipsis">{{currentSong.artist}}</div>
       </ng-container>
     </div>
-    <div class="col-xs-4 flex-direction-column">
+    <div class="col-xs-6 flex-direction-column">
       <div class="justify-content-center align-items-center m-b-s">
-        <i class="material-icons trackbar__icon-btn hover-color-blue m-r-m trackbar__icon-btn--xsmall hidden-xs" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.REPEAT}" (click)="setRepeat()">repeat</i>
+        <i class="material-icons trackbar__icon-btn hover-color-blue m-r-m trackbar__icon-btn--xsmall" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.REPEAT}" (click)="setRepeat()">repeat</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue" (click)="goPrev()">skip_previous</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue m-l-s" (click)="play()" *ngIf="player.paused">play_circle_outline</i>
         <i class="material-icons trackbar__icon-btn blue m-l-s" (click)="pause()" *ngIf="!player.paused">pause_circle_outline</i>
         <i class="material-icons trackbar__icon-btn hover-color-blue m-l-s"  (click)="goNext()">skip_next</i>
-        <i class="material-icons trackbar__icon-btn hover-color-blue m-l-m trackbar__icon-btn--xsmall hidden-xs" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.RANDOM}" (click)="setRandom()">shuffle</i>
+        <i class="material-icons trackbar__icon-btn hover-color-blue m-l-m trackbar__icon-btn--xsmall" [ngClass]="{'trackbar__icon-btn--active': reproduction === reproductionTypes.RANDOM}" (click)="setRandom()">shuffle</i>
       </div>
       <div class="justify-content-center align-items-center min-height-2">
         <span class="text-s" *ngIf="player.duration">{{secondsToMinute(progress)}}</span>
@@ -30,9 +30,9 @@
        <span class="text-s" *ngIf="player.duration">{{secondsToMinute(player.duration)}}</span>
       </div>
     </div>
-    <div class="col-xs-4 align-items-center justify-content-center">
-        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--xsmall m-r-s" (click)="updateVolume(0.5)" *ngIf="player.volume === 0">volume_off</i>
-        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--xsmall m-r-s" (click)="updateVolume(0)" *ngIf="player.volume > 0">volume_up</i>
+    <div class="col-xs-3 align-items-center justify-content-center flex-direction-column p-l-s">
+        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--xsmall m-b-s blue" (click)="updateVolume(0.5)" *ngIf="player.volume === 0">volume_off</i>
+        <i class="material-icons trackbar__icon-btn trackbar__icon-btn--xsmall m-b-s hover-color-blue" (click)="updateVolume(0)" *ngIf="player.volume > 0">volume_up</i>
         <input
           type="range"
           min="0"
