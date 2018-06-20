@@ -3,7 +3,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 import { TrackBarComponent } from './track-bar.component'
 import { deepEqual } from 'assert'
 import { ReproductionTypes } from '../../../models/reproductionTypes'
-import { By } from '@angular/platform-browser'
 
 describe('TrackBarComponent', () => {
   let component: TrackBarComponent
