@@ -20,7 +20,7 @@ Run `yarn start` . Navigate to `http://localhost:8080/`
 
 ## Running tests
 
-Run `ng test` to execute the unit tests
+Run `ng test` to execute the tests
 
 ## Style code
 
