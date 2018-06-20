@@ -4,6 +4,8 @@ Music player written in Angular 6
 
 ## Before start
 
+Make sure you have installed on your system `node`, `angular cli` and `yarn`
+
 Run `yarn install`
 
 ## Development server
@@ -16,10 +18,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `yarn start` . Navigate to `http://localhost:8080/`
 
-## Running unit tests
+## Running tests
 
 Run `ng test` to execute the unit tests
 
+## Style code
+
+Run `yarn prettier`
+
+Run `ng lint`
 
 ## Further help
 
