@@ -1,11 +1,10 @@
 {
   "name": "music-player",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "postinstall": "ng build --aot --prod",
     "prettier": "prettier --write '{,!(node_modules)/**/}*.ts'",
     "test": "ng test",
     "lint": "ng lint"
